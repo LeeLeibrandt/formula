@@ -40,10 +40,8 @@
             <p>You can't score any points on Saturday - but what you do in qualifying can make or break a Grand Prix weekend. Want to know what's really happening? Read on...</p>
             <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
         </div> 
-        
-        <?php
-            include_once('includes/cards.php');
-        ?>
+
+        <?php include_once('includes/trackcards.php'); ?>
     </main>
 
     
