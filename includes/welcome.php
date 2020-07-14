@@ -26,11 +26,11 @@
         ?>
                 <h2>Welcome,
         <?php   
-                echo $row['username']."</h2>";
+                echo $row['username'] . "</h2>";
             }
         ?>
         <a href="../index.php" class="btn btn-primary">Home</a>
-        <a href="loout.php" class="btn btn-outline-danger">Logout</a>
+        <a href="logout.php" class="btn btn-outline-danger">Logout</a>
     </div>
 </div>
 <?php

@@ -26,13 +26,24 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mession</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mission</a>
             </li>
         </ul>
         <?php
-            if(isset($_SESSION['username'])) {
-                echo "Welcome back " . $_SESSION['username'];
-            }else{
+            
+            $id = $_SESSION['user_login'];
+
+            $select_stmt = $db->prepare("SELECT * FROM tbl_user WHERE user_id=:uid");
+            $select_stmt->execute(array(":uid"=>$id));
+
+            $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
+
+            if(isset($_SESSION['user_login'])) 
+            {
+                echo "Welcome back " . "<a href='includes/welcome.php'>" . $row['username'] ."</a>";
+            }
+            else
+            {
                 echo "Welcome Guest <a href='includes/login.php'><button class='btn btn-outline-primary btn-sm'>Login<button></a> ";
             }
         ?>

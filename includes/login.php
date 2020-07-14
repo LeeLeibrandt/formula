@@ -67,70 +67,131 @@
         }
     }
 ?>
-	<div class="wrapper">
-	
-	<div class="container">
-			
-		<div class="col-lg-12">
-		
-		<?php
-		if(isset($errorMsg))
-		{
-			foreach($errorMsg as $error)
-			{
-			?>
-				<div class="alert alert-danger">
-					<strong><?php echo $error; ?></strong>
-				</div>
+   <style>
+       body{
+           background-color:#000;
+       }
+       .box{
+           width:100vw;
+           height:100vh;
+           display:flex;
+        }
+        .left{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            background-color:#000;
+        }
+        .left form{
+            width:100%;
+            margin:3rem;
+        }
+        .left form-group label{
+            width:100%;
+        }
+        .right{
+            width: 70%;
+            height: 100%;
+           
+        }
+        .right img{
+            width:100%;
+            height:100%;
+        }
+        input{
+            width:100%;
+            height:50px;
+            border-radius:5px;
+            border-radius:0;
+            background-color:transparent;
+            border:transparent;
+            color: rgb(129, 252, 252);
+        }
+        input:focus{
+            outline:none;
+            border-bottom:1px solid #fff;
+        }
+        .btn{
+            border-radius:0;
+            color:#fff;
+            border:1px solid #fff;
+            font-weight:600;
+        }
+        .btn:hover{
+            background-color:#fff;
+            border:1px solid #fff;
+            color:#000;
+            font-weight:600;
+        }
+        @media screen and (max-width:800px){
+            .box{
+                display:flex;
+                flex-wrap:wrap;
+            }
+            .left, 
+            .right{
+                width:100%;
+                height:50%;
+            }
+            .left form{
+                width:100%;
+                height:100%;
+            }
+            .right img{
+				width:100%;
+            }
+        }
+   </style>
+    <div class="box">
+        
+        <div class="right">
+            <img src="../img/Login.jpeg" alt="car">
+        </div>   
+
+        <div class="left">
             <?php
-			}
-		}
-		if(isset($loginMsg))
-		{
-		?>
-			<div class="alert alert-success">
-				<strong><?php echo $loginMsg; ?></strong>
-			</div>
-        <?php
-		}
-		?>   
-			<center><h2>Login Page</h2></center>
-			<form method="post" class="form-horizontal">
-					
-				<div class="form-group">
-				<label class="col-sm-3 control-label">Username or Email</label>
-				<div class="col-sm-6">
-				<input type="text" name="txt_username_email" class="form-control" placeholder="enter username or email" />
-				</div>
-				</div>
-					
-				<div class="form-group">
-				<label class="col-sm-3 control-label">Password</label>
-				<div class="col-sm-6">
-				<input type="password" name="txt_password" class="form-control" placeholder="enter passowrd" />
-				</div>
-				</div>
-				
-				<div class="form-group">
-				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				<input type="submit" name="btn_login" class="btn btn-success" value="Login">
-				</div>
-				</div>
-				
-				<div class="form-group">
-				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-				You don't have a account register here? <a href="register.php"><p class="text-info">Register Account</p></a>		
-				</div>
-				</div>
-					
-			</form>
-			
-		</div>
-		
-	</div>
-			
+                    if(isset($errorMsg))
+                    {
+                        foreach($errorMsg as $error)
+                        {
+                        ?>
+                            <div class="alert alert-danger">
+                                <strong><?php echo $error; ?></strong>
+                            </div>
+                        <?php
+                        }
+                    }
+                    if(isset($loginMsg))
+                    {
+                    ?>
+                        <div class="alert alert-success">
+                            <strong><?php echo $loginMsg; ?></strong>
+                        </div>
+                    <?php
+                    }
+            ?> 
+            <form method="post" class="form-horizontal"> 
+                <h1 style="color:#eee;">Login Form</h1>
+                <div class="form-group">
+                    <input type="text" name="txt_username_email"  placeholder="Username or Email" autocomplete="off" />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="txt_password"  placeholder="Enter password" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="btn_login" class="btn" value="Login">
+                </div>
+                   <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9 m-t-15">
+                        You don't have a account yet? <a href="register.php"><p class="text-info">Register Account</p></a>		
+                    </div>
+                </div>
+            </form> 
+        </div>       
     </div>
-    
-    <?php
-        foot();
-    ?>
+<?php
+    foot();
+?>

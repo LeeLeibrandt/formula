@@ -1,8 +1,10 @@
 <?php
-
     session_start();
-    require_once('includes/functions.php');
+
+    include_once('includes/database.php');
+    include_once('includes/functions.php');
     head('HOME');
+
     include_once('includes/nav.php');
 ?>
  
