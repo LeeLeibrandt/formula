@@ -5,7 +5,7 @@
     require_once('database.php');
     require_once('functions.php');
 
-    head('login form');
+    head('Login');
 
     if(isset($_SESSION["user_login"]))	//check condition user login not direct back to index.php page
     {

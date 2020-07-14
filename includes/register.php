@@ -4,7 +4,7 @@
 	require_once("database.php");
 	require_once("functions.php");
 
-	head('Register form');
+	head('Register');
 
 	if(isset($_REQUEST['btn_register'])) 
 	{
@@ -175,15 +175,15 @@
 				?> 
 				<h1 style="color:#eee;">Register Form</h1>
 				<div class="form-group">
-					<input type="text" name="txt_username" placeholder="enter username" autocomplete="off" />
+					<input type="text" name="txt_username" placeholder="Enter username" autocomplete="off" />
 				</div>
 							
 				<div class="form-group">
-					<input type="text" name="txt_email" placeholder="enter email" autocomplete="off" />
+					<input type="text" name="txt_email" placeholder="Enter email" autocomplete="off" />
 				</div>
 								
 				<div class="form-group">
-					<input type="password" name="txt_password" placeholder="enter passowrd" />
+					<input type="password" name="txt_password" placeholder="Enter passowrd" />
 				</div>
 								
 				<div class="form-group">
@@ -194,15 +194,12 @@
 							
 				<div class="form-group">
 					<div class="col-sm-offset-3 col-sm-9 m-t-15">
-						You have a account register here? 
 						<a href="login.php"><p class="text-info">Login Account</p></a>		
 					</div>
 				</div>	
 			</form>		
 		</div>
-	</div>		
-	
-										
+	</div>											
 <?php
 	foot();
 ?>

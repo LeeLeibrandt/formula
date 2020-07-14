@@ -14,6 +14,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Races</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Store</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Drivers
@@ -25,9 +28,7 @@
                     <a class="dropdown-item" href="#">Cars</a>
                 </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Mission</a>
-            </li>
+            
         </ul>
         <?php
             
@@ -44,7 +45,7 @@
             }
             else
             {
-                echo "Welcome Guest <a href='includes/login.php'><button class='btn btn-outline-primary btn-sm'>Login<button></a> ";
+                echo "Welcome Guest <a href='includes/login.php'><button class='btn btn-outline-primary btn-sm'>Sign In<button></a> ";
             }
         ?>
     </div>

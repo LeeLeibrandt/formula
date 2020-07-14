@@ -23,6 +23,37 @@ function foot(){
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
             <script src="js/main.js"></script>
+            <script>
+                var currentSlide = 1;
+
+                function showSlide(slideIndex) {
+                    const slides = document.getElementsByClassName('carouselImgs');
+                    if (slideIndex > slides.length) { currentSlide = 1 }
+                    if (slideIndex < 1) { currentSlide = slides.length }
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = 'none'
+                    }
+                    slides[currentSlide - 1].style.display = 'flex'
+                }
+                
+                function nextSlide() {
+                    showSlide(currentSlide += 1);
+                }
+                
+                function previousSlide() {
+                    showSlide(currentSlide -= 1);
+                }
+                
+                window.onload = function () {
+                    showSlide(currentSlide);
+                    document.getElementById('btnPrev').addEventListener('click', function () {
+                        previousSlide();
+                    })
+                    document.getElementById('btnNext').addEventListener('click', function () {
+                        nextSlide();
+                    })
+                }
+            </script>
             </body>
         </html>
     EOT;
