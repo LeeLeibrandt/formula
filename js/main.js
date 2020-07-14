@@ -12,7 +12,7 @@ window.onscroll = function(){
     }
 };
 
-///
+//card carousel
 const gap = 16;
 
 const carousel = document.getElementById("carousel"),

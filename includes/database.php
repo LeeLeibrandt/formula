@@ -4,15 +4,14 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASSWORD', 'root'); 
-define('DATABASE', 'msfts');
+define('DATABASE', 'justforfun');
 
-function DB()
+try {
+    $conn = new PDO('mysql:host='.HOST.';dbname='.DATABASE.'', USER, PASSWORD);
+    return $conn;
+} 
+catch (PDOException $error) 
 {
-    try {
-        $db = new PDO('mysql:host='.HOST.';dbname='.DATABASE.'', USER, PASSWORD);
-        return $db;
-    } catch (PDOException $e) {
-        return "Error!: " . $e->getMessage();
-        die();
-    }
+    return "Error!: " . $error->getMessage();
+    die();
 }

@@ -6,7 +6,7 @@
 }
 .btn{
     border: 1px solid #fff;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     border-radius: 0;
 }
@@ -24,7 +24,7 @@ body{
     background-color: #000;
 }
 main{
-   padding: 3rem 3rem;
+   padding: 3rem 1rem;
 }
 #nav{
     margin-bottom: 0;
@@ -48,7 +48,7 @@ nav{
 .jumbotron{
     width: 90%;
     position: relative;
-  
+    margin-bottom:0;
     background-color: transparent;
 }
 .jumbotron p{
@@ -150,5 +150,178 @@ nav{
     position: relative;
     top: -10px;
 }
-
 /*END*//*END*//*END*//*END*//*END*//*END*//*END*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid #000;
+}
+.carouselContainer {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.carouselImgs {
+    width: 100%;
+    height: 100%;
+    animation: fade 1.5s;
+    display: none;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.prev, .next {
+    position: absolute;
+    top: 49%;
+    cursor: pointer
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.driver{
+      display: flex;
+      width:100%;
+      height:100%;
+}
+.driver img{
+      width: 400px;
+      height:500px;
+      padding-right:.5rem;
+    
+}
+.driver-name h1{
+      font-size: 3rem;
+      color:#fff;
+      padding-left:.5rem;
+}
+.driver-name span{
+      font-size:5rem;
+}
+/* Panels. */
+.splitview {
+    position: relative;
+    width: 100%;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    overflow: hidden;
+}
+
+.panel .content {
+    position: absolute;
+    width: 100vw;
+    min-height: 45vw;
+    color: #fff;
+}
+
+.panel .description {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.panel img {
+    /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);*/
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bottom {
+    background-color: transparent;
+    z-index: 1;
+}
+
+.bottom .description {
+    right: 5%;
+}
+
+.top {
+    background-color: #fff;
+    color:#000;
+    z-index: 2;
+    width: 50vw;
+}
+
+.top .description {
+    left: 5%;
+    color:#000;
+}
+
+/* Handle. */
+.handle {
+    height: 100%;
+    position: absolute;
+    display: block;
+    width: 5px;
+    top: 0;
+    left: 50%;
+    z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+    top: 50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    transform-origin: top;
+}
+
+.skewed .top {
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+    transform: skew(30deg);
+    margin-left: 1000px;
+}
+
+/* Responsive. */
+@media screen and (max-width: 800px) {
+    .driver{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .driver{
+       order:1;
+    }
+    .driver-name h1{
+        display:none;
+    }
+    .jumbotron p{
+        width:100%;
+    }
+}
+@keyframes fade{
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
