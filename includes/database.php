@@ -1,17 +1,16 @@
 <?php
 
-// database Connection variables
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', 'root'); 
-define('DATABASE', 'justforfun');
+$db_host="localhost"; //localhost server 
+$db_user="root";	//database username
+$db_password="root";	//database password   
+$db_name="formula";	//database name
 
-try {
-    $conn = new PDO('mysql:host='.HOST.';dbname='.DATABASE.'', USER, PASSWORD);
-    return $conn;
-} 
-catch (PDOException $error) 
+try
 {
-    return "Error!: " . $error->getMessage();
-    die();
+	$db=new PDO("mysql:host={$db_host};dbname={$db_name}",$db_user,$db_password);
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch(PDOEXCEPTION $e)
+{
+	$e->getMessage();
 }
