@@ -6,9 +6,10 @@ window.onscroll = function(){
     if(window.pageYOffset > 50){
         nav.style.background = "#fff";
         nav.style.boxShadow = "0px 10px 10px #fff";
+        
     }else{
         nav.style.background = "transparent";   
-        nav.style.boxShadow = "none";    
+        nav.style.boxShadow = "none";   
     }
 };
 

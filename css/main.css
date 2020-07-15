@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -41,22 +43,22 @@ nav{
     padding: 5px 100px;
 }
 
-/*JUMBO*//*JUMBO*//*JUMBO*//*JUMBO*/
 .jumbotron{
-    
     position: relative;
     margin-bottom:0;
     background-color: transparent;
     margin-top: 3rem;
+}
+.jumbotron h1{
+    font-weight: 600;
+    margin: .5rem 0;
 }
 .jumbotron p{
     width: 60%;
     font-size: 14px;
     font-weight: 400;
 }
-/*JUMBO*//*JUMBO*//*JUMBO*//*JUMBO*/
 
-/*TRACK CARDS*//*TRACK CARDS*//*TRACK CARDS*//*TRACK CARDS*/
 #tracks{
     margin-top: 5rem;
 }
@@ -149,65 +151,65 @@ nav{
     position: relative;
     top: -10px;
 }
-/*END*//*END*//*END*//*END*//*END*//*END*//*END*/
+
 #drivers{
-    text-align: center;
-    color: #eee;
-}
-#drivers h2{
-    font-size: 2em;
-    font-weight: 700;
-    margin: 1rem 0;
-}
-.box{
     width:100%;
-    height:100%;
+    height:50%;
     display:flex;
-    margin: 2rem 0;
 }
-.left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team-driver{
+    text-align: center;
 }
-.right{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.team-driver h1{
+    color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
+} 
+.space .jumbotron{
+    margin-top: 0;
 }
-.right img{
-    width:330px;
-    height:400px;
+.driver-1{
+    width:50%;
+    height:100%;
+    text-align:center;
 }
-@media screen and (max-width:800px){
-    .box{
-        display:flex;
-        flex-wrap:wrap;
-    }
-    .left, 
-    .right{
-        width:100%;
-        height:100%;
-    }
-    .left form{
-        width:100%;
-        height:100%;
-    }
-    .right{
-       order: 1; 
-    }
-    .left{
-        order: 2;
-    }
-    .right img{
-        width:70%;
-    }
+.driver-2{
+    width:50%;
+    height:100%;
+    text-align:center;
 }
-/*CARS*/
+/*Did it like this cause conflict with others images*/
+.driver-1 img{
+    width:80%;
+    height:100%;
+}
+.driver-2 img{
+    width:80%;
+    height:100%;
+}
+.layer{
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:0;
+}
+.layer:hover{
+    background-color:black;
+    opacity:.5;
+}
+.jumbotron h2{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 2px;
+} 
+.jumbotron span{
+    font-size: 6rem;
+}
+
+
 #cars{
     text-align: center;
     margin-bottom: 10rem;
@@ -262,88 +264,7 @@ nav{
 .driver-name span{
       font-size:5rem;
 }
-/* Panels. */
-.splitview {
-    position: relative;
-    width: 100%;
-    min-height: 45vw;
-    overflow: hidden;
-}
-.panel {
-    position: absolute;
-    width: 100vw;
-    min-height: 45vw;
-    overflow: hidden;
-}
-.panel .content {
-    position: absolute;
-    width: 100vw;
-    min-height: 45vw;
-    color: #fff;
-}
-.panel .description {
-    width: 25%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-.panel img {
-    /*box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15);*/
-    width: 35%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.bottom {
-    background-color: transparent;
-    z-index: 1;
-}
 
-.bottom .description {
-    right: 5%;
-}
-.top {
-    background-color: #fff;
-    color:#000;
-    z-index: 2;
-    width: 50vw;
-}
-.top .description {
-    left: 5%;
-    color:#000;
-}
-/* Handle. */
-.handle {
-    height: 100%;
-    position: absolute;
-    display: block;
-    width: 5px;
-    top: 0;
-    left: 50%;
-    z-index: 3;
-}
-/* Skewed. */
-.skewed .handle {
-    top: 50%;
-    transform: rotate(30deg) translateY(-50%);
-    height: 200%;
-    -webkit-transform-origin: top;
-    -moz-transform-origin: top;
-    transform-origin: top;
-}
-.skewed .top {
-    transform: skew(-30deg);
-    margin-left: -1000px;
-    width: calc(50vw + 1000px);
-}
-.skewed .top .content {
-    transform: skew(30deg);
-    margin-left: 1000px;
-}
-
-/*/////////LOGOS/ FOOOTER/////////*/
 .logos{
     margin-top: 10rem;
     height: 70vh;
@@ -383,7 +304,6 @@ nav{
     border-bottom: 2px solid #fff;
 }
 
-
 /* Responsive. */
 @media screen and (max-width: 800px) {
     .track{
@@ -403,6 +323,17 @@ nav{
     .jumbotron p{
         width:100%;
     }
+    #drivers{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .driver-1, .driver-2{
+        width:100%;
+        height:100%;
+    }
+    .logos{
+        margin-top:5rem;
+    }
     .logo{
         margin: 0;
     }
@@ -411,6 +342,10 @@ nav{
     }
     .carouselContainer {
         margin-bottom: 0;
+        height: 50%;
+    }
+    #cars{
+        margin: 5rem 0;
     }
     .footer{
         display: flex;
@@ -443,12 +378,26 @@ nav{
     .footer .end ul li:hover{
         transition: 1s;
     }
-}
-@keyframes fade{
-    from {
-        opacity: 0.4;
+    .box{
+        display:flex;
+        flex-wrap:wrap;
     }
-    to {
-        opacity: 1;
+    .left, 
+    .right{
+        width:100%;
+        height:100%;
+    }
+    .left form{
+        width:100%;
+        height:100%;
+    }
+    .right{
+       order: 1; 
+    }
+    .left{
+        order: 2;
+    }
+    .right img{
+        width:70%;
     }
 }

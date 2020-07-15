@@ -3,11 +3,11 @@
 
     include_once('includes/database.php');
     include_once('includes/functions.php');
-    head('HOME');
 
+    head('HOME');
     include_once('nav.php');
 ?>
- 
+    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -27,62 +27,58 @@
         </div>
     </div>
     
-    <main>
-        <div class="jumbotron">
-            <img src="./img/logo.svg" alt="logo" style="width:300px;">
-            <h1>WE RACE AS ONE</h1>
-            <p>You can't score any points on Saturday - but what you do in qualifying can make or break a Grand Prix weekend. Want to know what's really happening? Read on...</p>
+    <div class="jumbotron" data-aos="fade-right" data-aos-duration="2000">
+            <img src="./img/formula.png" alt="logo" style="width:300px;" >
+            <h1>#WE RACE AS ONE</h1>
+            <p>
+                As Formula 1 returns after a four-month break, 
+                we believe we must return with added purpose and determination 
+                to tackle the major issues that we as a sport, but also society, are facing. 
+                Those issues are important to the longer-term future of our sport, 
+                but equally have a major impact on the communities we race in and countries around the world.
+            </p>
             <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
-        </div>
+    </div>
 
-        <div id="cars">
-            <div class="carouselContainer">
-                <div class="carouselImgs">
-                    <img src="img/cars/2.jpeg" alt="car" style="width:100%;">
-                </div>
-                <div class="carouselImgs">
-                    <img src="img/cars/1.jpeg" alt="car" style="width:100%;">
-                </div>
-                <div class="carouselImgs">
-                    <img src="img/cars/0.jpeg" alt="car" style="width:100%;">
-                </div>
-                
-                <span class="prev" id="btnPrev" style="color: rgb(129, 252, 252);"> < </span>
-                <span class="next" id="btnNext" style="color: rgb(129, 252, 252);"> > </span>
+    <div id="cars" data-aos="fade-left" data-aos-duration="2000">
+        <div class="carouselContainer">
+            <div class="carouselImgs">
+                <img src="img/cars/2.jpeg" alt="car" style="width:100%;">
             </div>
-            <button class="btn">view specs</button>
+            <div class="carouselImgs">
+                <img src="img/cars/1.jpeg" alt="car" style="width:100%;">
+            </div>
+            <div class="carouselImgs">
+                <img src="img/cars/0.jpeg" alt="car" style="width:100%;">
+            </div>
+            <span class="prev" id="btnPrev" style="color: rgb(129, 252, 252);"> < </span>
+            <span class="next" id="btnNext" style="color: rgb(129, 252, 252);"> > </span>
         </div>
-        
+        <button class="btn">view specs</button>
+    </div>
+    
+    <div class="team-driver">
+        <h1 data-aos="fade-down" data-aos-duration="2000">The Drivers</h1>
         <div id="drivers">
-            <h2>The Drivers</h2>
-            <div class="box">
-                <div class="right">
-                    <img src="img/driver01.png" alt="">
-                </div>
-                <div class="left">
-                    <div class="jumbotron">
-                        <img src="./img/logo.svg" alt="logo" style="width:300px;">
-                        <h1>L.HAMILTION 44</h1>
-                        <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
-                    </div>
+            <div class="driver-1 space" data-aos="fade-right" data-aos-duration="1500">
+                <div class="jumbotron">
+                    <img src="img/Lewis.png" alt="driver">
+                    <h2 data-aos="flip-down" data-aos-duration="2000">L.HAMILTON <span>44</span></h2>
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
                 </div>
             </div>
-            <div class="box">
-                <div class="left">
-                    <div class="jumbotron">
-                        <img src="./img/logo.svg" alt="logo" style="width:300px;">
-                        <h1>V.BOTTAS 77</h1>
-                        <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
-                    </div>
+            <div class="driver-2 space" data-aos="fade-left" data-aos-duration="1500">
+                <div class="jumbotron">
+                    <img src="img/Bottas.png" alt="driver">
+                    <h2 data-aos="flip-down" data-aos-duration="2000">V.BOTTAS <span>77</span></h2>
+                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
                 </div>
-                <div class="right">
-                    <img src="img/driver02.jpg" alt="">
-                </div>
-            </div>
+            </div>   
         </div>
+    </div>
         
-        <div id="tracks">
-            <center><h2 style="color:#eee;">Race Calendar</h2></center>
+    <div id="tracks" data-aos="fade-up" data-aos-duration="2000">
+            <h2 style="color:#eee;" data-aos="fade-down" data-aos-duration="2000">Race Calendar 2020</h2></center>
             <div id="carousel">
                 <div id="content">
                     <div class="track">
@@ -241,9 +237,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
 
-        <div class="logos">
+    <div class="logos" data-aos="fade-down" data-aos-duration="2000">
             <img src="img/logos/00.png" alt="logo">
             <img src="img/logos/01.png" alt="logo">
             <img src="img/logos/02.png" alt="logo">
@@ -259,9 +255,9 @@
             <img src="img/logos/12.png" alt="logo">
             <img src="img/logos/13.png" alt="logo">
             <img src="img/logos/14.png" alt="logo">
-        </div>
+    </div>
 
-        <div class="footer">
+    <div class="footer">
             <div class="start">@2020 LEE LEIBRANDT</div>
             <div class="end">
                 <ul>
@@ -275,8 +271,7 @@
                     <li>website</li>
                 </ul>
             </div>
-        </div>
-    </main>
+    </div>
 
 <?php
     foot();
