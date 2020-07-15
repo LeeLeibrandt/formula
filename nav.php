@@ -9,13 +9,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.php">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Races</a>
+                <a class="nav-link" href="#tracks">Races</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Store</a>
+                <a class="nav-link" href="./store.php" tabindex="-1" aria-disabled="true">Store</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -25,7 +25,7 @@
                     <a class="dropdown-item" href="#">Hamilton</a>
                     <a class="dropdown-item" href="#">Bottas</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Cars</a>
+                    <a class="dropdown-item" href="#cars">Cars</a>
                 </div>
             </li>
             

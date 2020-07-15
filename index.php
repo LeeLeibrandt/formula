@@ -25,14 +25,6 @@
                 <img src="img/01.jpeg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <!--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>-->
     </div>
     
     <main>
@@ -60,7 +52,6 @@
             </div>
             <button class="btn">view specs</button>
         </div>
-        
         
         <div id="drivers">
             <h2>The Drivers</h2>
@@ -91,7 +82,7 @@
         </div>
         
         <div id="tracks">
-            <h2>Race Calendar</h2>
+            <center><h2 style="color:#eee;">Race Calendar</h2></center>
             <div id="carousel">
                 <div id="content">
                     <div class="track">
@@ -285,7 +276,6 @@
                 </ul>
             </div>
         </div>
-
     </main>
 
 <?php
