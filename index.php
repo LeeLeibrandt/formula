@@ -26,18 +26,24 @@
             </div>
         </div>
     </div>
+
+    <!--<div id="time"></div>-->
     
-    <div class="jumbotron" data-aos="fade-right" data-aos-duration="2000">
-            <img src="./img/formula.png" alt="logo" style="width:300px;" >
-            <h1>#WE RACE AS ONE</h1>
-            <p>
-                As Formula 1 returns after a four-month break, 
-                we believe we must return with added purpose and determination 
-                to tackle the major issues that we as a sport, but also society, are facing. 
-                Those issues are important to the longer-term future of our sport, 
-                but equally have a major impact on the communities we race in and countries around the world.
-            </p>
-            <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
+    <div class="countDown" data-aos="fade-down" data-aos-duration="2000">
+        <h1>Hungarian Grand Prix <div id="countDown"></div></h1>
+    </div>
+
+    <div class="jumbotron" data-aos="fade-right" data-aos-duration="2000" >
+        <img src="./img/formula.png" alt="logo" style="width:300px;" >
+        <h1>#WE RACE AS ONE</h1>
+        <p>
+            As Formula 1 returns after a four-month break, 
+            we believe we must return with added purpose and determination 
+            to tackle the major issues that we as a sport, but also society, are facing. 
+            Those issues are important to the longer-term future of our sport, 
+            but equally have a major impact on the communities we race in and countries around the world.
+        </p>
+        <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
     </div>
 
     <div id="cars" data-aos="fade-left" data-aos-duration="2000">
@@ -64,21 +70,21 @@
                 <div class="jumbotron">
                     <img src="img/Lewis.png" alt="driver">
                     <h2 data-aos="flip-down" data-aos-duration="2000">L.HAMILTON <span>44</span></h2>
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
+                    <a class="btn btn-outline-primary btn-lg" href="driverone.php" role="button">Read more</a>
                 </div>
             </div>
             <div class="driver-2 space" data-aos="fade-left" data-aos-duration="1500">
                 <div class="jumbotron">
                     <img src="img/Bottas.png" alt="driver">
                     <h2 data-aos="flip-down" data-aos-duration="2000">V.BOTTAS <span>77</span></h2>
-                    <a class="btn btn-outline-primary btn-lg" href="#" role="button">Read more</a>
+                    <a class="btn btn-outline-primary btn-lg" href="drivertwo.php" role="button">Read more</a>
                 </div>
             </div>   
         </div>
     </div>
         
     <div id="tracks" data-aos="fade-up" data-aos-duration="2000">
-            <h2 style="color:#eee;" data-aos="fade-down" data-aos-duration="2000">Race Calendar 2020</h2></center>
+            <h2 style="font-weight:600; padding-left:.5rem;" data-aos="fade-down" data-aos-duration="2000">Race Calendar 2020</h2></center>
             <div id="carousel">
                 <div id="content">
                     <div class="track">
@@ -239,40 +245,7 @@
             </div>
     </div>
 
-    <div class="logos" data-aos="fade-down" data-aos-duration="2000">
-            <img src="img/logos/00.png" alt="logo">
-            <img src="img/logos/01.png" alt="logo">
-            <img src="img/logos/02.png" alt="logo">
-            <img src="img/logos/03.png" alt="logo">
-            <img src="img/logos/04.png" alt="logo">
-            <img src="img/logos/05.png" alt="logo">
-            <img src="img/logos/06.png" alt="logo">
-            <img src="img/logos/07.png" alt="logo">
-            <img src="img/logos/08.png" alt="logo">
-            <img src="img/logos/09.png" alt="logo">
-            <img src="img/logos/10.png" alt="logo">
-            <img src="img/logos/11.png" alt="logo">
-            <img src="img/logos/12.png" alt="logo">
-            <img src="img/logos/13.png" alt="logo">
-            <img src="img/logos/14.png" alt="logo">
-    </div>
-
-    <div class="footer">
-            <div class="start">@2020 LEE LEIBRANDT</div>
-            <div class="end">
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Products & Company</li>
-                    <li>Imprint</li>
-                    <li>Brand Protection</li>
-                    <li>media</li>
-                    <li>contact us</li>
-                    <li>shop</li>
-                    <li>website</li>
-                </ul>
-            </div>
-    </div>
-
 <?php
+    include_once('footers.php');
     foot();
 ?>

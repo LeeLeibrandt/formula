@@ -15,15 +15,15 @@
                 <a class="nav-link" href="#tracks">Races</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./store.php" tabindex="-1" aria-disabled="true">Store</a>
+                <a class="nav-link" href="./store/index.php" tabindex="-1" aria-disabled="true">Store</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Drivers
                 </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Hamilton</a>
-                    <a class="dropdown-item" href="#">Bottas</a>
+                    <a class="dropdown-item" href="driverone.php">Hamilton</a>
+                    <a class="dropdown-item" href="drivertwo.php">Bottas</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#cars">Cars</a>
                 </div>
