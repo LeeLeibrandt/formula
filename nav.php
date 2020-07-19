@@ -45,7 +45,7 @@
             }
             else
             {
-                echo "Welcome Guest <a href='includes/login.php'><button class='btn btn-outline-primary btn-sm'>Sign In<button></a> ";
+                echo "Welcome Guest <a href='includes/login.php'><button class='btn btn-outline-primary btn-sm'>Sign In</button></a> ";
             }
         ?>
     </div>
