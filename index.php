@@ -30,7 +30,7 @@
     <!--<div id="time"></div>-->
     
     <div class="countDown" data-aos="fade-down" data-aos-duration="2000">
-        <h1>Hungarian Grand Prix <div id="countDown"></div></h1>
+        <h1 style="color: transparent; -webkit-text-stroke: .7px #fff;">Silverstone Circuit, United Kindom <div id="countDown"></div></h1>
     </div>
 
     <div class="jumbotron" data-aos="fade-right" data-aos-duration="2000" >
